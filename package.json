@@ -1,0 +1,36 @@
+{
+  "name": "reacttooltip",
+  "widgetName": "ReactTooltip",
+  "version": "1.0.0",
+  "description": "Tooltip widget for Mx 8+",
+  "copyright": "2020 ITVisors",
+  "author": "Nathan Ruth",
+  "config": {
+    "widgetPath": "./test/widgets",
+    "projectPath": "./test/",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": "3000"
+  },
+  "packagePath": "itvisors",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server --open",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^8.10.1",
+    "@types/big.js": "^4.0.5",
+    "@types/classnames": "^2.2.4",
+    "@types/react": "~16.9.0",
+    "@types/react-dom": "~16.9.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react-tooltip": "^4.2.10"
+  }
+}

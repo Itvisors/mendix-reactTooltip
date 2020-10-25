@@ -1,0 +1,16 @@
+.env
+test/deployment/
+test/.classpath
+test/.project
+test/theme/.sass-cache/
+test/GPUCache/
+dist/
+node_modules/
+*.log
+*.launch
+*.tmp
+*.lock
+*.bak
+.idea/
+*DS_Store*
+.npmrc

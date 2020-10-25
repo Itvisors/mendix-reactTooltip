@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="itvisors.reacttooltip.ReactTooltip" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>React Tooltip</name>
+    <description>Tooltip widget for Mx 8+</description>
+    <icon> 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
+    </icon>
+    <properties>
+        <propertyGroup caption="General">
+            <propertyGroup caption="Main">
+                <property key="toolTipTrigger" type="widgets" required="false">
+                    <caption>Tooltip trigger</caption>
+                    <description>The icon/text/button to be used as tooltip trigger</description>
+                </property>
+                <property key="toolTipId" type="string" required="true">
+                    <caption>Identifier</caption>
+                    <description>Create a unique identifier</description>
+                </property>
+                <property key="toolTipText" type="textTemplate" required="true" multiline="true">
+                    <caption>Tooltip text</caption>
+                    <description>The text to be displayed as tooltip</description>
+                </property>
+                <property key="toolTipPosition" type="enumeration" defaultValue="top">
+                    <caption>Tooltip position</caption>
+                    <description>Position in relation to trigger</description>
+                    <enumerationValues>
+                        <enumerationValue key="top">Top</enumerationValue>
+                        <enumerationValue key="bottom">Bottom</enumerationValue>
+                        <enumerationValue key="left">Left</enumerationValue>
+                        <enumerationValue key="right">Right</enumerationValue>
+                    </enumerationValues>
+                </property>
+                <property key="toolTipEffect" type="enumeration" required="true" defaultValue="solid">
+                    <caption>Tooltip effect</caption>
+                    <description>Float: Tooltip will move with mouse, Solid: Tooltip has fixed position.</description>
+                    <enumerationValues>
+                        <enumerationValue key="solid">Solid</enumerationValue>
+                        <enumerationValue key="float">Float</enumerationValue>
+                    </enumerationValues>
+                </property>
+                <property key="triggerType" type="enumeration" required="true" defaultValue="hover">
+                    <caption>Trigger type</caption>
+                    <description>How to trigger the tooltip</description>
+                    <enumerationValues>
+                        <enumerationValue key="hover">Hover</enumerationValue>
+                        <enumerationValue key="click">Click</enumerationValue>
+                    </enumerationValues>
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Hover only">
+            <property key="delayShow" type="integer" defaultValue="0">
+                    <caption>Show delay</caption>
+                    <description>Delay before showing tooltip (ms)</description>
+                </property>
+                <property key="delayHide" type="integer" defaultValue="0">
+                    <caption>Hide delay</caption>
+                    <description>Delay before hiding tooltip (ms)</description>
+                </property>
+            </propertyGroup>
+        </propertyGroup>
+        <propertyGroup caption="Customization">
+            <propertyGroup caption="Basic styling">
+                <property key="toolTipStyle" type="enumeration" defaultValue="dark">
+                    <caption>Tooltip style</caption>
+                    <description>Theme of the tooltip</description>
+                    <enumerationValues>
+                        <enumerationValue key="dark">Dark</enumerationValue>
+                        <enumerationValue key="light">Light</enumerationValue>
+                        <enumerationValue key="info">Info</enumerationValue>
+                        <enumerationValue key="success">Success</enumerationValue>
+                        <enumerationValue key="warning">Warning</enumerationValue>
+                        <enumerationValue key="error">Error</enumerationValue>
+                    </enumerationValues>
+                </property>
+                <property key="enableBorder" type="boolean" defaultValue="false">
+                    <caption>Border</caption>
+                    <description>Adds a 1px white border around the tooltip</description>
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Advanced styling">
+                <property key="textColor" type="string" required="false">
+                    <caption>Textcolor</caption>
+                    <description></description>
+                </property>
+                <property key="backgroundColor" type="string" required="false">
+                    <caption>Background color</caption>
+                    <description></description>
+                </property>
+                <property key="borderColor" type="string" required="false">
+                    <caption>Border color</caption>
+                    <description></description>
+                </property>
+                <property key="arrowColor" type="string" required="false">
+                    <caption>Arrow color</caption>
+                    <description></description>
+                </property>
+            </propertyGroup>
+        </propertyGroup>
+    </properties>
+</widget>
