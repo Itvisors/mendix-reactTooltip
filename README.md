@@ -23,7 +23,7 @@ Implementation of https://www.npmjs.com/package/react-tooltip
 - If using advanced styling, fill in valid hex colors i.e. #FFFFFF
 
 ## Demo project
-See "test" folder
+See [test](https://github.com/Itvisors/mendix-reactTooltip/tree/main/test_) folder
 
 ## Issues, suggestions and feature requests
 See [here](https://github.com/Itvisors/mendix-reactTooltip/issues)
