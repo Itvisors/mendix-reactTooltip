@@ -1,5 +1,5 @@
 ## ReactTooltip
-Highly customizable tooltip/helptext widget for Mendix 8+
+Highly customizable tooltip/helptext widget for Mendix 8+  
 Implementation of https://www.npmjs.com/package/react-tooltip
 
 ## Features
