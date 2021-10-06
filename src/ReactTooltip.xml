@@ -21,6 +21,10 @@
                     <caption>Tooltip text</caption>
                     <description>The text to be displayed as tooltip</description>
                 </property>
+                <property key="html" type="boolean" required="true" defaultValue="false">
+                    <caption>Render as HTML</caption>
+                    <description>Renders the text of the tooltip as HTML</description>
+                </property>
                 <property key="toolTipPosition" type="enumeration" defaultValue="top">
                     <caption>Tooltip position</caption>
                     <description>Position in relation to trigger</description>

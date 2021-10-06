@@ -22,6 +22,7 @@ export interface ReactTooltipContainerProps {
     toolTipTrigger?: ReactNode;
     toolTipId: string;
     toolTipText: DynamicValue<string>;
+    html: boolean;
     toolTipPosition: ToolTipPositionEnum;
     toolTipEffect: ToolTipEffectEnum;
     triggerType: TriggerTypeEnum;
@@ -41,6 +42,7 @@ export interface ReactTooltipPreviewProps {
     toolTipTrigger: { widgetCount: number; renderer: ComponentType };
     toolTipId: string;
     toolTipText: string;
+    html: boolean;
     toolTipPosition: ToolTipPositionEnum;
     toolTipEffect: ToolTipEffectEnum;
     triggerType: TriggerTypeEnum;
