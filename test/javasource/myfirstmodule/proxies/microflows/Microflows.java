@@ -7,25 +7,24 @@ package myfirstmodule.proxies.microflows;
 import java.util.HashMap;
 import java.util.Map;
 import com.mendix.core.Core;
-import com.mendix.core.CoreException;
-import com.mendix.systemwideinterfaces.MendixRuntimeException;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 
 public class Microflows
 {
+	/**
+	 * @deprecated
+	 * The default constructor of the Microflows class should not be used.
+	 * Use the static microflow invocation methods instead.
+	 */
+	@java.lang.Deprecated(since = "9.12", forRemoval = true)
+	public Microflows() {}
+
 	// These are the microflows for the MyFirstModule module
 	public static myfirstmodule.proxies.Entity dS_Entity(IContext context)
 	{
-		try
-		{
-			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
-			IMendixObject result = (IMendixObject)Core.execute(context, "MyFirstModule.DS_Entity", params);
-			return result == null ? null : myfirstmodule.proxies.Entity.initialize(context, result);
-		}
-		catch (CoreException e)
-		{
-			throw new MendixRuntimeException(e);
-		}
+		Map<java.lang.String, Object> params = new HashMap<>();
+		IMendixObject result = (IMendixObject)Core.microflowCall("MyFirstModule.DS_Entity").withParams(params).execute(context);
+		return result == null ? null : myfirstmodule.proxies.Entity.initialize(context, result);
 	}
 }
