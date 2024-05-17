@@ -1,36 +1,39 @@
 {
   "name": "reacttooltip",
   "widgetName": "ReactTooltip",
-  "version": "1.0.0",
-  "description": "Tooltip widget for Mx 8+",
-  "copyright": "2020 ITVisors",
-  "author": "Nathan Ruth",
+  "version": "2.0.0",
+  "description": "Tooltip widget for Mendix",
+  "copyright": "Aiden(2024)",
+  "author": "Nathan Ruth & Johan Munneke",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "Apache-2.0",
   "config": {
-    "widgetPath": "./test/widgets",
-    "projectPath": "./test/",
-    "mendixHost": "http://localhost:8080",
-    "developmentPort": "3000"
+    "projectPath": "./Test/"
   },
   "packagePath": "itvisors",
   "scripts": {
-    "start": "pluggable-widgets-tools start:server --open",
-    "dev": "pluggable-widgets-tools start:web",
-    "build": "pluggable-widgets-tools build:web",
+    "start": "pluggable-widgets-tools start:native",
+    "build": "pluggable-widgets-tools build:native",
     "lint": "pluggable-widgets-tools lint",
     "lint:fix": "pluggable-widgets-tools lint:fix",
     "prerelease": "npm run lint",
-    "release": "pluggable-widgets-tools release:web"
+    "release": "pluggable-widgets-tools release:native"
   },
-  "license": "Apache-2.0",
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^8.10.1",
-    "@types/big.js": "^4.0.5",
-    "@types/classnames": "^2.2.4",
-    "@types/react": "~16.9.0",
-    "@types/react-dom": "~16.9.0"
+    "@mendix/pluggable-widgets-tools": "^10.7.1",
+    "@types/big.js": "^6.0.2"
   },
   "dependencies": {
-    "classnames": "^2.2.6",
-    "react-tooltip": "^4.2.10"
+    "react-tooltip": "^5.26.4"
+  },
+  "resolutions": {
+    "react": "18.2.0",
+    "react-native": "0.72.7"
+  },
+  "overrides": {
+    "react": "18.2.0",
+    "react-native": "0.72.7"
   }
 }
