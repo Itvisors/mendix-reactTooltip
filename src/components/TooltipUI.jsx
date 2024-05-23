@@ -1,26 +1,12 @@
-import { Children, Component, ReactNode, createElement } from "react";
-import { PlacesType, Tooltip, VariantType } from "react-tooltip";
+import { Children, Component, createElement } from "react";
+import { Tooltip } from "react-tooltip";
 
-export interface ReactTooltipProps {
-    toolTipId: string;
-    toolTipText: string;
-    toolTipPosition: PlacesType;
-    toolTipStyle: VariantType;
-    toolTipEffect: String;
-    triggerType: string;
-    delayShow: number;
-    delayHide: number;
-    enableBorder: boolean;
-    arrowColor?: string;
-    children?: any;
-}
-
-export class TooltipUI extends Component<ReactTooltipProps> {
-    createBootstrapTooltipIcon(): ReactNode {
+export class TooltipUI extends Component {
+    createBootstrapTooltipIcon() {
         return <span className="glyphicon glyphicon-question-sign"></span>;
     }
 
-    render(): ReactNode {
+    render() {
         return (
             <div>
                 <span
