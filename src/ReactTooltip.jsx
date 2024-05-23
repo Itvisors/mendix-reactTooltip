@@ -9,6 +9,8 @@ export default class ReactTooltip extends Component {
 
     render() {
         const {
+            class: className,
+            style,
             toolTipTrigger,
             toolTipId,
             toolTipText,
@@ -34,6 +36,8 @@ export default class ReactTooltip extends Component {
                 delayHide={delayHide}
                 enableBorder={enableBorder}
                 arrowColor={arrowColor}
+                className={className}
+                style={style}
             >
                 {toolTipTrigger}
             </TooltipUI>

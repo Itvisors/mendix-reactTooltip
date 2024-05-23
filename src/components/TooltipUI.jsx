@@ -21,6 +21,8 @@ export class TooltipUI extends Component {
                 </span>
 
                 <Tooltip
+                    style={this.props.style}
+                    className={this.props.className}
                     id={this.props.toolTipId}
                     place={this.props.toolTipPosition}
                     events={this.props.triggerType === "click" ? ["click"] : ["hover"]}

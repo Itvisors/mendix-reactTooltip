@@ -60,28 +60,26 @@
             </propertyGroup>
         </propertyGroup>
         <propertyGroup caption="Customization">
-            <propertyGroup caption="Basic styling">
-                <property key="toolTipStyle" type="enumeration" defaultValue="dark">
-                    <caption>Tooltip style</caption>
-                    <description>Theme of the tooltip</description>
-                    <enumerationValues>
-                        <enumerationValue key="dark">Dark</enumerationValue>
-                        <enumerationValue key="light">Light</enumerationValue>
-                        <enumerationValue key="info">Info</enumerationValue>
-                        <enumerationValue key="success">Success</enumerationValue>
-                        <enumerationValue key="warning">Warning</enumerationValue>
-                        <enumerationValue key="error">Error</enumerationValue>
-                    </enumerationValues>
-                </property>
-                <property key="enableBorder" type="boolean" defaultValue="false">
-                    <caption>Border</caption>
-                    <description>Adds a 1px white border around the tooltip</description>
-                </property>
-                <property key="arrowColor" type="string" required="false">
-                    <caption>Arrow color</caption>
-                    <description></description>
-                </property>
-            </propertyGroup>
+            <property key="toolTipStyle" type="enumeration" defaultValue="dark">
+                <caption>Tooltip style</caption>
+                <description>Theme of the tooltip</description>
+                <enumerationValues>
+                    <enumerationValue key="dark">Dark</enumerationValue>
+                    <enumerationValue key="light">Light</enumerationValue>
+                    <enumerationValue key="info">Info</enumerationValue>
+                    <enumerationValue key="success">Success</enumerationValue>
+                    <enumerationValue key="warning">Warning</enumerationValue>
+                    <enumerationValue key="error">Error</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="enableBorder" type="boolean" defaultValue="false">
+                <caption>Border</caption>
+                <description>Adds a 1px white border around the tooltip</description>
+            </property>
+            <property key="arrowColor" type="string" required="false">
+                <caption>Arrow color</caption>
+                <description>fill in valid hex colors i.e. #FFFFFF</description>
+            </property>
         </propertyGroup>
     </properties>
 </widget>
