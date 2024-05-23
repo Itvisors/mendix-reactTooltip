@@ -1,7 +1,7 @@
 /**
  * This file was generated from ReactTooltip.xml
  * WARNING: All changes made to this file will be overwritten
- * @author Mendix UI Content Team
+ * @author Mendix Widgets Framework Team
  */
 import { ComponentType, CSSProperties, ReactNode } from "react";
 import { DynamicValue } from "mendix";
@@ -18,7 +18,7 @@ export interface ReactTooltipContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
-    tabIndex: number;
+    tabIndex?: number;
     toolTipTrigger?: ReactNode;
     toolTipId: string;
     toolTipText: DynamicValue<string>;
@@ -29,16 +29,19 @@ export interface ReactTooltipContainerProps {
     delayHide: number;
     toolTipStyle: ToolTipStyleEnum;
     enableBorder: boolean;
-    textColor: string;
-    backgroundColor: string;
-    borderColor: string;
     arrowColor: string;
 }
 
 export interface ReactTooltipPreviewProps {
+    /**
+     * @deprecated Deprecated since version 9.18.0. Please use class property instead.
+     */
+    className: string;
     class: string;
     style: string;
-    toolTipTrigger: { widgetCount: number; renderer: ComponentType };
+    styleObject?: CSSProperties;
+    readOnly: boolean;
+    toolTipTrigger: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
     toolTipId: string;
     toolTipText: string;
     toolTipPosition: ToolTipPositionEnum;
@@ -48,8 +51,5 @@ export interface ReactTooltipPreviewProps {
     delayHide: number | null;
     toolTipStyle: ToolTipStyleEnum;
     enableBorder: boolean;
-    textColor: string;
-    backgroundColor: string;
-    borderColor: string;
     arrowColor: string;
 }

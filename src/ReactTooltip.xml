@@ -77,20 +77,6 @@
                     <caption>Border</caption>
                     <description>Adds a 1px white border around the tooltip</description>
                 </property>
-            </propertyGroup>
-            <propertyGroup caption="Advanced styling">
-                <property key="textColor" type="string" required="false">
-                    <caption>Textcolor</caption>
-                    <description></description>
-                </property>
-                <property key="backgroundColor" type="string" required="false">
-                    <caption>Background color</caption>
-                    <description></description>
-                </property>
-                <property key="borderColor" type="string" required="false">
-                    <caption>Border color</caption>
-                    <description></description>
-                </property>
                 <property key="arrowColor" type="string" required="false">
                     <caption>Arrow color</caption>
                     <description></description>
