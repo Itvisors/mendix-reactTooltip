@@ -1,6 +1,8 @@
 import { Children, Component, createElement } from "react";
 import { Tooltip } from "react-tooltip";
 
+import "../ui/ReactTooltip.css";
+
 export class TooltipUI extends Component {
     createBootstrapTooltipIcon() {
         return <span className="glyphicon glyphicon-question-sign"></span>;

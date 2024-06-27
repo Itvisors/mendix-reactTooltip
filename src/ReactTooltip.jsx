@@ -3,10 +3,6 @@ import { Component, createElement } from "react";
 import { TooltipUI } from "./components/TooltipUI";
 
 export default class ReactTooltip extends Component {
-    addLinebreaks(text) {
-        return text.replace(/(\n)+/g, "<br/>");
-    }
-
     render() {
         const {
             class: className,
@@ -27,7 +23,7 @@ export default class ReactTooltip extends Component {
         return (
             <TooltipUI
                 toolTipId={toolTipId}
-                toolTipText={toolTipText.status === "available" ? this.addLinebreaks(toolTipText.value) : ""}
+                toolTipText={toolTipText.status === "available" ? toolTipText.value : ""}
                 toolTipPosition={toolTipPosition}
                 toolTipEffect={toolTipEffect}
                 toolTipStyle={toolTipStyle}

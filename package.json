@@ -1,7 +1,7 @@
 {
   "name": "reacttooltip",
   "widgetName": "ReactTooltip",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Tooltip widget for Mendix",
   "copyright": "ITvisors(2020)",
   "author": "Nathan Ruth & Johan Munneke",
